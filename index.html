@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontiera Solutions - Australia Market Entry & Business Setup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(to right, rgba(0, 59, 111, 0.9), rgba(22, 101, 192, 0.8)), url('https://placehold.co/1600x900/dbeafe/3b82f6?text=Melbourne+Skyline');
+            background-size: cover;
+            background-position: center;
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .service-card {
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 59, 111, 0.1);
+            border-color: #3b82f6;
+        }
+        .testimonial-card {
+            background-color: #f0f4f8;
+        }
+        /* Dropdown styles */
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-800">Frontiera Solutions</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <div class="relative dropdown">
+                    <button class="text-gray-600 hover:text-blue-600 flex items-center">
+                        Services <i class="fas fa-chevron-down ml-2 text-xs"></i>
+                    </button>
+                    <div class="dropdown-menu absolute left-0 mt-2 w-64 bg-white rounded-md shadow-xl z-20">
+                        <div class="grid grid-cols-1 gap-4 p-4">
+                            <div>
+                                <h3 class="font-bold text-sm text-gray-500 uppercase px-3 pb-2">Accounting Services</h3>
+                                <a href="#accounting-bookkeeping" class="block px-3 py-2 text-gray-600 hover:bg-blue-50 rounded-md">Initial Bookkeeping Setup</a>
+                                <a href="#accounting-tax" class="block px-3 py-2 text-gray-600 hover:bg-blue-50 rounded-md">Tax Registration</a>
+                                <a href="#accounting-payroll" class="block px-3 py-2 text-gray-600 hover:bg-blue-50 rounded-md">Payroll System Setup</a>
+                                <a href="#accounting-reporting" class="block px-3 py-2 text-gray-600 hover:bg-blue-50 rounded-md">Foundational Reporting</a>
+                            </div>
+                        </div>
+                         <div class="bg-gray-50 p-4">
+                            <a href="#services" class="text-blue-600 font-semibold hover:underline">View All Core Services &raquo;</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#why-us" class="text-gray-600 hover:text-blue-600">Why Us</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
+                <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-md cta-button hover:bg-blue-700">Contact Us</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i class="fas fa-bars text-2xl text-gray-600"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <a href="#services" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">All Services</a>
+             <div class="px-4 py-2">
+                <button id="mobile-services-toggle" class="w-full text-left text-sm text-gray-600 hover:bg-gray-100 flex justify-between items-center">
+                    <span>Detailed Services</span>
+                    <i class="fas fa-chevron-down ml-2 text-xs"></i>
+                </button>
+                <div id="mobile-services-menu" class="hidden mt-2 pl-4 border-l-2 border-gray-200">
+                    <h3 class="font-bold text-xs text-gray-500 uppercase py-2">Accounting</h3>
+                    <a href="#accounting-bookkeeping" class="block py-1 text-sm text-gray-600 hover:bg-gray-100">Initial Bookkeeping Setup</a>
+                    <a href="#accounting-tax" class="block py-1 text-sm text-gray-600 hover:bg-gray-100">Tax Registration</a>
+                    <a href="#accounting-payroll" class="block py-1 text-sm text-gray-600 hover:bg-gray-100">Payroll System Setup</a>
+                    <a href="#accounting-reporting" class="block py-1 text-sm text-gray-600 hover:bg-gray-100">Foundational Reporting</a>
+                </div>
+            </div>
+            <a href="#why-us" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Why Us</a>
+            <a href="#about" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">About</a>
+            <a href="#contact" class="block py-2 px-4 text-sm text-white bg-blue-600 hover:bg-blue-700">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-bg text-white">
+            <div class="container mx-auto px-6 py-24 md:py-32 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Your Gateway to the Australian Market</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Expert advisory and consultancy for a seamless Australia market entry and business setup. We turn complexity into opportunity.</p>
+                <a href="#contact" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-full cta-button hover:bg-gray-100">
+                    Start Your Australian Venture
+                </a>
+            </div>
+        </section>
+
+        <section id="services" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Our Core Services</h2>
+                    <p class="text-gray-600 mt-2">End-to-end solutions for your Australian business journey.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="service-card bg-gray-50 p-8 rounded-lg text-center">
+                        <div class="text-4xl text-blue-600 mb-4"><i class="fas fa-map-signs"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Market Entry Strategy</h3>
+                        <p class="text-gray-600">In-depth market analysis, competitor research, and risk assessment to build a tailored, data-driven entry strategy for your success.</p>
+                    </div>
+                    <div class="service-card bg-gray-50 p-8 rounded-lg text-center">
+                        <div class="text-4xl text-blue-600 mb-4"><i class="fas fa-building"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Business Setup & Registration</h3>
+                        <p class="text-gray-600">Navigating the legal landscape to register your company, secure an ABN, and establish your operational framework efficiently.</p>
+                    </div>
+                    <div class="service-card bg-gray-50 p-8 rounded-lg text-center">
+                        <div class="text-4xl text-blue-600 mb-4"><i class="fas fa-balance-scale"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Regulatory & Tax Compliance</h3>
+                        <p class="text-gray-600">Ensuring full compliance with Australian corporate law, taxation (GST, etc.), and industry-specific regulations from day one.</p>
+                    </div>
+                    <div class="service-card bg-gray-50 p-8 rounded-lg text-center">
+                        <div class="text-4xl text-blue-600 mb-4"><i class="fas fa-search-location"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Location & Operations Advisory</h3>
+                        <p class="text-gray-600">Strategic advice on office location, supply chain logistics, and operational setup to optimize your business presence.</p>
+                    </div>
+                    <div class="service-card bg-gray-50 p-8 rounded-lg text-center">
+                        <div class="text-4xl text-blue-600 mb-4"><i class="fas fa-handshake"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Partner & Network Introduction</h3>
+                        <p class="text-gray-600">Leveraging our extensive local network to connect you with essential partners, from legal firms to marketing agencies.</p>
+                    </div>
+                    <div class="service-card bg-gray-50 p-8 rounded-lg text-center">
+                        <div class="text-4xl text-blue-600 mb-4"><i class="fas fa-users-cog"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Ongoing Business Support</h3>
+                        <p class="text-gray-600">Providing continued advisory on growth strategies, cultural business practices, and operational scaling post-launch.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="detailed-services" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <div class="mb-16">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Setup-Focused Accounting Services</h2>
+                        <p class="text-gray-600 mt-2">Essential financial services for the initial stages of your Australian business.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div id="accounting-bookkeeping" class="bg-white p-6 rounded-lg shadow-md scroll-mt-24">
+                            <h3 class="text-xl font-bold mb-2 text-blue-700">Initial Bookkeeping Setup</h3>
+                            <p class="text-gray-600">Setting up your chart of accounts and recording initial transactions to build a strong financial foundation.</p>
+                        </div>
+                        <div id="accounting-tax" class="bg-white p-6 rounded-lg shadow-md scroll-mt-24">
+                            <h3 class="text-xl font-bold mb-2 text-blue-700">Tax Registration & Compliance</h3>
+                            <p class="text-gray-600">Expert handling of all initial Australian tax registrations (TFN, ABN, GST) and ensuring compliance from day one.</p>
+                        </div>
+                        <div id="accounting-payroll" class="bg-white p-6 rounded-lg shadow-md scroll-mt-24">
+                            <h3 class="text-xl font-bold mb-2 text-blue-700">Payroll System Setup</h3>
+                            <p class="text-gray-600">Establishing an efficient payroll system, including superannuation compliance and employee onboarding, to ensure your team is paid accurately.</p>
+                        </div>
+                        <div id="accounting-reporting" class="bg-white p-6 rounded-lg shadow-md scroll-mt-24">
+                            <h3 class="text-xl font-bold mb-2 text-blue-700">Foundational Financial Reporting</h3>
+                            <p class="text-gray-600">Preparation of initial financial statements and cash flow projections to support your business plan and strategic decisions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-us" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Why Partner With Us?</h2>
+                    <p class="text-gray-600 mt-2">Your dedicated guide in a complex market.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-12 text-center">
+                    <div>
+                        <div class="text-4xl text-blue-600 mx-auto mb-4"><i class="fas fa-globe-australia"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Unmatched Local Expertise</h3>
+                        <p class="text-gray-600">Based in Australia, we possess deep, current knowledge of the market dynamics, regulatory environment, and business culture.</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl text-blue-600 mx-auto mb-4"><i class="fas fa-cogs"></i></div>
+                        <h3 class="text-xl font-bold mb-2">End-to-End Bespoke Service</h3>
+                        <p class="text-gray-600">We offer a holistic partnership, customising our services to your specific industry, scale, and business objectives.</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl text-blue-600 mx-auto mb-4"><i class="fas fa-check-circle"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Results-Driven Approach</h3>
+                        <p class="text-gray-600">Our goal is not just to set you up, but to set you up for long-term success and sustainable growth in Australia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">What Our Clients Say</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="testimonial-card p-8 rounded-lg bg-white">
+                        <p class="text-gray-600 mb-4 italic">"Frontiera Solutions was instrumental in our launch in Melbourne. Their local knowledge is second to none. We felt supported at every step."</p>
